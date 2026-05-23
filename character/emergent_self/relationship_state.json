@@ -1,0 +1,13 @@
+{
+  "relationship_depth": 17,
+  "affection": 0,
+  "trust": 5,
+  "comfort": 5,
+  "anger": 0,
+  "mood": 50,
+  "loneliness": 0,
+  "flags": {
+    "angry_reaction": false
+  },
+  "discomfort": 0
+}

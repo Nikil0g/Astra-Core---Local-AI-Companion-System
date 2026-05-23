@@ -1,0 +1,63 @@
+{
+  "ollama_url": "http://127.0.0.1:11434/api/generate",
+  "model": "mistral-nemo",
+  "tts_url": "http://127.0.0.1:7851/api/tts-generate",
+  "tts_voice": "ru_RU-irina-medium.onnx",
+  "mic_device": 0,
+  "sample_rate": 48000,
+  "push_to_talk_key": "num 7",
+  "base_dir": ".",
+  "current_model": "mistral-nemo:latest",
+  "orchestrator_model": "phi3:mini",
+  "user_name": "User",
+  "timezone": "Europe/Moscow",
+  "user_gender_grammar": "unknown",
+  "debug_memory": false,
+  "memory_debug_to_console": false,
+  "python_path": "python",
+  "whisper_model": "medium",
+  "whisper_device": "cpu",
+  "whisper_compute_type": "int8",
+  "character_name": "Astra",
+  "model_presets": {
+    "mistral-nemo": {
+      "generation_params": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "num_predict": 256,
+        "num_ctx": 8192,
+        "repeat_penalty": 1.1
+      }
+    },
+    "saiga-unleashed:latest": {
+      "generation_params": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "num_predict": 1024,
+        "repeat_penalty": 1.1
+      },
+      "memory_analyzer_params": {
+        "temperature": 0.1,
+        "num_predict": 100
+      }
+    },
+    "mistral-nemo:latest": {
+      "generation_params": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "num_predict": 1024,
+        "repeat_penalty": 1.1
+      },
+      "memory_analyzer_params": {
+        "temperature": 0.2,
+        "num_predict": 196
+      }
+    }
+  },
+  "orchestrator_enabled": true,
+  "orchestrator_params": {
+    "temperature": 0.0,
+    "top_p": 0.8,
+    "num_predict": 30
+  }
+}

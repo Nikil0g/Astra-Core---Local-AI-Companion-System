@@ -1,0 +1,10 @@
+requests
+tzdata
+pyside6
+sounddevice
+scipy
+faster-whisper
+keyboard
+pygame
+win10toast
+numpy

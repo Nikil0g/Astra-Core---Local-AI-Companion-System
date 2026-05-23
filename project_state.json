@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "current_focus": "Memory v2",
+  "current_step": "Smarter Memory v2 retrieval and session analyzer cleanup",
+  "next_steps": [
+    "Почистить session_analyzer от слабых бесполезных summary",
+    "Доделать smarter Memory v2 retrieval",
+    "Сделать Context Optimizer / intent-based context selection",
+    "Сделать Response Filter v1 / Behavior Guard",
+    "Доработать Conversation State v2",
+    "Начать Mood / Relationship foundation"
+  ],
+  "open_problems": [
+    "Context bloat / VRAM вырос примерно с 9 GB до 12+ GB",
+    "Astra иногда использует повторные opening-фразы",
+    "Memory v2 retrieval пока простой и без semantic search",
+    "Session analyzer иногда сохраняет слишком слабые итоги",
+    "usage_count растёт, когда memory попала в prompt, а не когда реально использована в ответе",
+    "Conversation State ещё нужно лучше отличать новую сессию, активный диалог и возвращение после долгого отсутствия"
+  ],
+  "done_recently": [
+    "AstraCore v0.1 создан",
+    "Core Self вынесен в character/core_self",
+    "settings.json и astra_core/settings.py добавлены",
+    "Short-term memory работает через conversation_state.json",
+    "TimeManager создан",
+    "Conversation State v1/v2 начат",
+    "Memory v2 создана через memory_store.json",
+    "Memory migration из txt выполнена",
+    "Memory v2 retrieval подключён",
+    "usage_count и last_used работают",
+    "session_analyzer создан",
+    "memory_cleanup.py создан и работает"
+  ],
+  "notes": [
+    "Project State не должен смешиваться с Memory v2",
+    "В будущем этот слой можно расширить до notebook/tasks/reminders",
+    "Astra должна использовать Project State для вопросов вроде: что дальше по плану?"
+  ]
+}
